@@ -18,7 +18,8 @@ The Gen AI Gatekeeper is an intelligent email monitoring and processing solution
 
 ## 🎥 Demo
 🔗 [Live Demo](#) (if applicable)  
-📹 [Video Demo](#) (if applicable)  
+📹 ![image](https://github.com/user-attachments/assets/c8662324-ccd8-4ecc-90cd-85021929206d)
+ 
 🖼️ Screenshots:
 
 ![Screenshot 1](link-to-image)
