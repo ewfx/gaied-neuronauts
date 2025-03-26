@@ -1,0 +1,15 @@
+From: sender@example.com
+To: recipient@example.com
+Subject: Sample Email Subject
+Date: Fri, 21 Mar 2025 15:54:00 +0530
+MIME-Version: 1.0
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: 7bit
+
+Hello,
+
+This is a sample email content created for demonstration purposes.
+Feel free to modify it as needed.
+
+Best regards,
+Sample Sender
