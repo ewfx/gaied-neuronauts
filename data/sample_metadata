@@ -1,0 +1,27 @@
+1. Closing Notice (Reallocation Fees) and 
+Money Movement Inbound (Principal + Interest + Fee) 
+are addressed within the same email.
+Subject: Urgent: Reallocation Fees and Principal Payment Requests
+
+2. complex email body with a corresponding attachment, designed to reflect 
+multiple request types from your dataset. 
+It ensures each request is clearly identifiable based on the sender's ask.
+Subject: Request for Closing Notice Updates and Outbound Money Transfer
+
+3. Here’s an example of a duplicate email thread - clarification
+scenario caused by multiple replies and forwards, along with a corresponding attachment. 
+This demonstrates how redundant service requests can be identified and mitigated.
+Subject: Request for Reallocation Fees and Cashless Roll
+Subject: Follow-Up: Reallocation Fees and Cashless Roll
+
+4. duplicate email threads arise due to multiple replies or forwards within an email thread, and the final email consolidates updates to reduce operational risk and prevent redundant service requests.
+{ Request type :"Commitment Change", sub-request type"Cashless Roll" }.
+Subject: Request for Cashless Roll under Commitment Change
+Subject: Re: Request for Cashless Roll under Commitment Change
+Subject: Updated Details for Cashless Roll under Commitment Change
+
+5. Here’s an example of an email body along with a corresponding attachment that fits the dataset requirement for "Commitment Change" with the subtype "Increase."
+Subject: Request to Increase Commitment Amount
+
+6. give example of an email -  Provide an email body and a corresponding attachment for the document, for the data set { "Money movement outbound": "Timebound" }.
+Subject: Request for Outbound Money Transfer
