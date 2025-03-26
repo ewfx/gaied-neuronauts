@@ -1,0 +1,279 @@
+{
+    "fields_mapping": {
+        "Money movement inbound": {
+            "PrincipalPayment": [
+                "Payment Amount",
+                "Payment Date",
+                "Loan/Facility ID",
+                "Borrower Name",
+                "Lender Account Information",
+                "Payment Method",
+                "Principal Balance Before Payment",
+                "Principal Balance After Payment",
+                "Payment Type",
+                "Prepayment Penalty",
+                "Prepayment Reason",
+                "Effective Date"
+            ],
+            "InterestPayment": [
+                "Interest Amount",
+                "Payment Date",
+                "Interest Period From",
+                "Interest Period To",
+                "Interest Rate Applied",
+                "Calculation Method",
+                "Day Count Convention",
+                "Interest Type",
+                "Loan/Facility ID",
+                "Borrower Name"
+            ],
+            "FeePayment": [
+                "Fee Type",
+                "Fee Amount",
+                "Fee Calculation Period",
+                "Calculation Method",
+                "Payment Date",
+                "Loan/Facility ID",
+                "Borrower Name",
+                "Distribution Instructions"
+            ],
+            "ForeignCurrency": [
+                "Original Currency",
+                "Target Currency",
+                "Exchange Rate",
+                "Transaction Type",
+                "Settlement Date",
+                "Contract Reference Number",
+                "Counterparty",
+                "Amount in Original Currency",
+                "Amount in Target Currency"
+            ],
+            "Principal": [
+                "Distribution Type",
+                "Total Amount",
+                "Principal Component",
+                "Interest Component",
+                "Fee Component",
+                "Distribution Date",
+                "Recipient Details",
+                "Pro Rata Calculations",
+                "Agent Fee Retention Amount"
+            ],
+            "Principal + Interest": [
+                "Distribution Type",
+                "Total Amount",
+                "Principal Component",
+                "Interest Component",
+                "Fee Component",
+                "Distribution Date",
+                "Recipient Details",
+                "Pro Rata Calculations",
+                "Agent Fee Retention Amount"
+            ]
+        },
+        "Money movement outbound": {
+            "LoanDisbursement": [
+                "Disbursement Amount",
+                "Disbursement Date",
+                "Disbursement Type",
+                "Recipient Account Details",
+                "Loan/Facility ID",
+                "Borrower Name",
+                "Purpose of Funds",
+                "Conditions Precedent Status",
+                "Available Commitment Before",
+                "Available Commitment After"
+            ],
+            "PrincipalInterestFee": [
+                "Distribution Type",
+                "Total Amount",
+                "Principal Component",
+                "Interest Component",
+                "Fee Component",
+                "Distribution Date",
+                "Recipient Details",
+                "Pro Rata Calculations",
+                "Agent Fee Retention Amount"
+            ],
+            "Timebound": [
+                "Distribution Type",
+                "Total Amount",
+                "Principal Component",
+                "Interest Component",
+                "Fee Component",
+                "Distribution Date",
+                "Recipient Details",
+                "Pro Rata Calculations",
+                "Agent Fee Retention Amount"
+            ]
+        },
+        "Adjustment": {
+            "RateAdjustment": [
+                "Adjustment Type",
+                "Old Rate",
+                "New Rate",
+                "Effective Date",
+                "Reason for Adjustment",
+                "Index Rate Reference",
+                "Documentation Reference",
+                "Notification Status"
+            ],
+            "BalanceAdjustment": [
+                "Adjustment Type",
+                "Adjustment Amount",
+                "Effective Date",
+                "Reason for Adjustment",
+                "Approval Reference",
+                "Balance Before Adjustment",
+                "Balance After Adjustment",
+                "Accounting Treatment"
+            ]
+        },
+        "AUTransfer": {
+            "ParticipantManagement": [
+                "Action Type",
+                "Participant Name",
+                "Participant Contact Information",
+                "Participation Percentage Before",
+                "Participation Percentage After",
+                "Effective Date",
+                "Assignment Fee",
+                "Consent Requirements Status"
+            ]
+        },
+        "ClosingNotice": {
+            "MaturityProcessing": [
+                "Notice Type",
+                "Effective Date",
+                "Original Maturity Date",
+                "New Maturity Date",
+                "Outstanding Balance",
+                "Payoff Amount",
+                "Payoff Instructions",
+                "Release Documents Required"
+            ]
+        },
+        "Commitment Change": {
+            "FacilityModification": [
+                "Modification Type",
+                "Current Commitment Amount",
+                "New Commitment Amount",
+                "Effective Date",
+                "Approval Reference",
+                "Fee Amount",
+                "Documentation Status",
+                "Lender Approval Status"
+            ],
+            "Increase": [
+                "Modification Type",
+                "Current Commitment Amount",
+                "New Commitment Amount",
+                "Effective Date",
+                "Approval Reference",
+                "Fee Amount",
+                "Documentation Status",
+                "Lender Approval Status"
+            ]
+        },
+        "FeePayment": {
+            "OngoingFee": [
+                "Fee Type",
+                "Fee Amount",
+                "Calculation Period",
+                "Fee Rate/Basis",
+                "Payment Date",
+                "Recipient Information",
+                "Calculation Method"
+            ]
+        },
+        "CollateralManagement": {
+            "CollateralAddition": [
+                "Collateral Type",
+                "Collateral Description",
+                "Collateral Value",
+                "Valuation Date",
+                "Valuation Method",
+                "LTV Ratio",
+                "Documentation Requirements",
+                "Insurance Requirements",
+                "Perfection Status"
+            ]
+        },
+        "CovenantTracking": {
+            "FinancialCovenant": [
+                "Covenant Type",
+                "Required Ratio",
+                "Actual Ratio",
+                "Testing Period",
+                "Compliance Status",
+                "Waiver Status",
+                "Remedy Period",
+                "Financial Statement Reference"
+            ]
+        },
+        "SyndicationManagement": {
+            "SyndicateCommunication": [
+                "Communication Type",
+                "Subject Matter",
+                "Required Response Date",
+                "Voting Threshold",
+                "Current Response Status",
+                "Approval Status",
+                "Distribution List",
+                "Documentation Reference"
+            ]
+        },
+        "RegulatoryCompliance": {
+            "KYC_AML_Updates": [
+                "Update Type",
+                "Entity Name",
+                "Review Date",
+                "Next Review Date",
+                "Status",
+                "Required Documentation",
+                "Responsible Officer",
+                "Regulatory Requirements Reference"
+            ]
+        },
+        "Escrow Management": {
+            "Escrow Balance Adjustment": [
+                "Escrow Account Number",
+                "Borrower Name",
+                "Adjustment Amount",
+                "Adjustment Type",
+                "Effective Date",
+                "Reason for Adjustment",
+                "Balance Before Adjustment",
+                "Balance After Adjustment",
+                "Approval Reference",
+                "Supporting Documentation"
+            ],
+            "Escrow Payment Setup": [
+                "Escrow Account Number",
+                "Borrower Name",
+                "Payment Amount",
+                "Payment Frequency",
+                "Start Date",
+                "End Date",
+                "Payment Method",
+                "Lender Account Information",
+                "Approval Reference",
+                "Supporting Documentation"
+            ]
+        },
+        "Tax Compliance and Reporting": {
+            "Form 1098 Issuance": [
+                "Borrower Name",
+                "Borrower Tax ID",
+                "Lender Name",
+                "Lender Tax ID",
+                "Loan/Facility ID",
+                "Interest Paid",
+                "Property Address",
+                "Tax Year",
+                "Form Issuance Date",
+                "Contact Information for Questions"
+            ]
+        }
+    }
+}

@@ -1,0 +1,81 @@
+{
+    "Adjustment": [
+        "Rate Adjustment",
+        "Balance Adjustment"
+    ],
+    "AU Transfer": [
+        "Participant Management",
+        "Agent/Administrative Rights"
+    ],
+    "Closing Notice": [ 
+        "Reallocation fees",
+        "Amendment fees",
+        "Reallocation Principal"
+    ],
+    "Commitment Change": [
+        "Cashless Roll",
+        "Decrease",
+        "Increase"
+    ],
+    "Fee payment": [
+        "Ongoing Fee",
+        "Letter of Credit Fee",
+        "Transactional Fee"
+    ],
+    "Money movement inbound": [
+        "Principal",
+        "Interest",
+        "Principal + Interest",
+        "Principal + Interest + Fee"
+    ],
+    "Money movement outbound": [
+        "Timebound",
+        "Foreign currency",
+        "Loan Disbursement"
+    ],
+    "Collateral Management": [
+        "Collateral Addition",
+        "Collateral Release",
+        "Collateral Valuation"
+    ],
+    "Covenant Tracking": [
+        "Financial Covenant",
+        "Operational Covenant"
+    ],
+    "Syndication Management": [
+        "Syndicate Communication",
+        "Secondary Trading"
+    ],
+    "Regulatory Compliance": [
+        "KYC/AML Updates",
+        "Reporting Requirements"
+    ],
+    "Specialty Financing": [
+        "Project Finance",
+        "Trade Finance",
+        "Structured Finance"
+    ],
+    "Loan Modification Requests": [
+        "Interest Rate Reduction",
+        "Term Extension",
+        "Principal Forgiveness",
+        "Deferral of Payment"
+    ],
+    "Escrow Management": [
+        "Escrow Payment Setup",
+        "Escrow Balance Adjustment"
+    ],
+    "Tax Compliance and Reporting":[
+        "Tax Reporting Requests",
+        "Form 1098 Issuance"
+    ],
+    "Credit Line Adjustment Requests":[
+        "Increase in Credit Line",
+        "Decrease in Credit Line"
+    ],
+    "Servicing Fee Dispute":[
+        "Fee Dispute",
+        "Overcharge Dispute"
+    ]
+    
+}

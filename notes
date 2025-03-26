@@ -1,0 +1,93 @@
+Create a gen ai, end to end, gatekeeper solution that can:
+•	Create a listener Service Request Gatekeeper that monitors for incoming new emails to a shared mailbox based on ‘To’ address.
+•	The Gatekeeper application would call an Email service Api that can perform below operations:
+
+1.	EMAIL IS IN FORMAT .EML/.MSG. The email service has inputs - email body, attachments (pdf, doc or eml files)
+3.	Output as:
+a.	The possible request types with prioritization and confidence score  
+b.	Other fields values extracted
+c.	Duplicate detection field including the reason for flagging as duplicate        
+4.	Use LLMs such as hugging face models, Open AI GPT, llama or Gemma, using feely available tools like langchain and the solution needs to be scalable, explainable and efficient allowing seamless integration into the Service Request Gatekeeper.
+5.	Accurately extract, interpret email content and attachments and categorize emails in to predefined "Request Type" and "Sub Request Type" based on the sender’s intent along with the reasoning. 
+6.	Content based data extraction:  Extract configurable fields/key attributes like deal name, amount, expiration date, from both email bodies and attachments based on the request type for populating in service requests.
+7.	Handling multiple request email with email primary intent detection: Solution should support complex cases like,
+a.	Single email can contain multiple request types ensuring each is identified based on sender’s ask. 
+b.	Determine the primary request type which represent the sender’s primary intent even when the email discuss multiple topics.
+8.	Priority based extraction: Implement customized extraction rules such as prioritizing email content over documents for request type identification, while extracting numerical fields from attachments
+9.	Duplicate email detection: Identify duplicate email threads that may arise due to multiple replies or forward within an email thread. This reduces operational risk and prevents redundant service requests.
+•	Autoroutes the service request to the appropriate team or individual based on roles and skills.
+•	Provide the database structure using sql lite or postgresDB.
+•	Error Handling failed email retrieval, unreadable attachments, .
+•	Provide data Analytics and Insights: email volumes, types of emails based on classification and other patterns
+•	User feedback integration, flag incorrectly classified/not a duplicate to improve system over time.
+•	The sample “Request Type” and “Sub Request Type”
+{
+  "Adjustment": [],
+  "AU Transfer": [],
+  "Closing Notice": [
+    "Reallocation fees",
+    "Amendment fees",
+    "Reallocation Principal"
+  ],
+  "Commitment Change": [
+    "Cashless Roll",
+    "Decrease",
+    "Increase"
+  ],
+  "Fee payment": [
+    "Ongoing Fee",
+    "Letter of Credit Fee"
+  ],
+  "Money movement inbound": [
+    "Principal",
+    "Interest",
+    "Principal + Interest",
+    "Principal + Interest + Fee"
+  ],
+  "Money movement outbound": [
+    "Timebound",
+    "Foreign currency"
+  ]
+}
+
+
+
+API:
+
+I/P: dataset, shared folder path, format .msg/.eml, list ( Request Type, Sub Request Type) Method: GetEmails from shared drive, move to another processed folder O/P: Request Type, Sub Request Type, Confidence score, Reasoning, Duplicate Email Flag, Fields & Values
+
+Email Classification: -- (Cini)
+
+    I/P: Request Type, Sub Request Type, Prioritization Rule (Email Body else Attachment Body)
+    O/P: Classified as Request Type, Sub Request Type, Confidence score, Reasoning
+Email Content Extraction: -- (Puru and Gayathri) - think of RAG
+
+    I/P: Configurable fields as per Request Type, Sub Request Type, Prioritization Rule (Attachment Body else Email Body)
+    O/p: Fields & Values, log/table for capturing processed emails, identify primary attachment if multiple
+Chain of Emails: RAG
+
+    1. Duplicate (check for email in processed folder) - semantic search -- (Seena)
+            I/P: log/table for capturing processed emails, sample emails
+            O/P: Reasoning, Duplicate Flag = Y, duplicate Confidence score
+
+    2. Update/Clarification/Discussion/Forgot to add attachment (search the same email chain) -- (Blessy)
+            I/P: chain email
+            O/P: web page
+Presentaion/Demo: 
+
+I/P: log/table for capturing processed emails
+O/P: web page
+Datasets: Loan Servicing Platform sample mails 
+
+
+RAG:
+A knowledge graph can structure and organize entities and relationships from your data (e.g., sender-recipient relationships in emails).
+
+A vector DB can store embeddings of unstructured data (e.g., email bodies, attachments) to enable semantic search.
+
+For instance:
+
+Use a knowledge graph to represent relationships in your data (e.g., "Kiran sent an email about pricing to Jane").
+
+Use a vector database to allow natural language search on email content and retrieve similar documents.
+

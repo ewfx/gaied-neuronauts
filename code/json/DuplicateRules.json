@@ -1,0 +1,7 @@
+{
+    "check_subject": true,
+    "check_sender": true,
+    "check_recipient": false,
+    "check_date": false,
+    "check_content": true
+}
