@@ -72,19 +72,61 @@ The Gen AI Gatekeeper monitors the backed up emails (.eml fomat) from a shared m
    ```
 2. Install dependencies  
    ```sh
-  pip install -r requirements.txt (for Python)
+   pip install -r requirements.txt (for Python)
    ```
 3. Launch the app from code > src folder using 
    ```sh
    python -m uvicorn main:app --reload
    ```
 4. From postman trigger this request after running the code from Visual Studio
+   ```sh
    http://localhost:8000/process-emails/?email_dir_path=<scenario single request>
-
+   ```   
 ## 🏗️ Tech Stack
 - 🔹 Frontend: React
 - 🔹 Backend: FastAPI, Uvicorn
 - 🔹 Gen AI models: Llama3-70b-8192, all-MiniLM-L6-v2
+
+## 🏗️ Sample Output
+
+{
+    "finaloutput": [
+        {
+            "classification": [
+                {
+                    "Request_Type": "Tax Compliance and Reporting",
+                    "SubRequest_Type": "Form 1098 Issuance",
+                    "Confidence_Score": 1,
+                    "Reasoning": "The email explicitly states that the Form 1098 is available for download and a paper copy has been mailed.",
+                    "Priority": 0.5,
+                    "Review": ""
+                }
+            ],
+            "fields": [
+                {
+                    "request_type": "Tax Compliance and Reporting",
+                    "extracted_data": {
+                        "Borrower Name": "Brian Williams",
+                        "Borrower Tax ID": null,
+                        "Lender Name": "Loan Servicing Co.",
+                        "Lender Tax ID": null,
+                        "Loan/Facility ID": "#1357924",
+                        "Interest Paid": "$8,423.15",
+                        "Property Address": null,
+                        "Tax Year": "2024",
+                        "Form Issuance Date": null,
+                        "Contact Information for Questions": "Tax Information Department"
+                    }
+                }
+            ],
+            "duplicates": [
+                {
+                    "Subject": "2024 Mortgage Interest Statement (Form 1098) Available - Loan #1357924",
+                    "Duplicate_Resons": "Duplicate Found in :subject for Processed email (2024 Mortgage Interest Statement (Form 1098) Available - Loan #1357924) with Confidence score: 1.00; Duplicate Found in :sender for Processed email (2024 Mortgage Interest Statement (Form 1098) Available - Loan #1357924) with Confidence score: 1.00; Duplicate Found in :content for Processed email (2024 Mortgage Interest Statement (Form 1098) Available - Loan #1357924) with Confidence score: 1.00; Duplicate Found in :sender for Processed email (Fw: 2024 Mortgage Interest Statement (Form 1098) Available - Loan #8901234) with Confidence score: 0.91; Duplicate Found in :content for Processed email (Fw: 2024 Mortgage Interest Statement (Form 1098) Available - Loan #8901234) with Confidence score: 0.91",
+                    "Verify_Reasons": false
+                }
+            ]
+        }]}
 
 ## 👥 Team
 - **Blessy Mathew M** - [GitHub](#) | [LinkedIn](#)
