@@ -22,7 +22,8 @@ The Gen AI Gatekeeper is an intelligent email monitoring and processing solution
  
 🖼️ Screenshots:
 
-![Screenshot 1](link-to-image)
+![image](https://github.com/user-attachments/assets/339e786e-4636-45c4-a18f-ccfaaafe935d)
+
 
 ## 💡 Inspiration
 Shared mailboxes are often inundated with emails from various senders, making it challenging for teams to prioritize and process requests efficiently. Manual sorting and data extraction are time-consuming and prone to errors. Inspired by the power of generative AI and efficient orchestration, we aimed to create a smart gatekeeper that automates email triaging, reduces human effort, and enhances decision-making with data-driven insights.
