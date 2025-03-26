@@ -1,0 +1,10 @@
+{
+    "Rules": [
+      "Provide a priority score between 0 and 1 for each classification, where 1 indicates high prirority.",
+      "If the email does not relate to any of the predefined request types, and it is not related to loan servicing, then classify it as 'off_topic' and assign the lowest priority.",
+      "Money-related requests (e.g., loan disbursement, payment requests, etc.) should be given higher priority over other types because they are likely more urgent and require immediate attention.",
+      "If there are multiple requests, any money-related or amount-related requests should be treated as the primary request (even if there are other non-money-related requests). Assign it a higher priority score.",
+      "If the email contains multiple non-money-related requests, assign each request type an equal priority score. Example: If there is a request about loan details and a request for a document upload (both non-money-related), both requests will be treated equally for processing, but still prioritized as secondary to any money-related requests."
+    ]
+  }
+  
